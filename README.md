@@ -9,7 +9,7 @@ A Generalized Weisfeiler-Lehman Graph Kernel
 
 ## Run the code (Example)
 The following command runs the script on the MUTAG dataset using the approximation variant: \
-`<python main.py Data/MUTAG --approx>`
+`python main.py Data/MUTAG --approx`
 
 Additional arguments are as follows:
 ```
