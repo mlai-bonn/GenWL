@@ -7,9 +7,6 @@ warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 
 def RWL(graphset, h_max, runs, cluster_type, k, cluster_iters):
-    
-    graph_data = gc.graph_data_to_graph_list(path, db)
-    graphset = GraphSet(graph_data)
 
     for i in range(1,h_max):
         graphset.compute_next_gen_labels_type1(compute_pairwise_dists=True)
@@ -24,8 +21,6 @@ def RWL(graphset, h_max, runs, cluster_type, k, cluster_iters):
 
 
 def RWL_star(graphset, h_max, runs, cluster_type, k, cluster_iters):
-    
-    
     
     for r in range(runs):
         for i in range(h_max):
